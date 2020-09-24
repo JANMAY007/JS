@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop types</title>
+</head>
+
+<body>
+    <p id="forin"></p>
+    <script>
+        for (let index = 0; index < 10; index++) {
+            const element = document.write(index);
+            document.write("<br>");
+        }
+        var person = {
+            fname: "Janmay",
+            lname: "Bhatt",
+            age: 19
+        };
+        var txt = "";
+        for (const key in person) {
+            if (person.hasOwnProperty(key)) {
+                txt += person[key] + " ";
+            }
+        }
+        document.getElementById("forin").innerHTML = txt;
+        var fruits = ["Mango", "Apple", "Orange", "Watermelon"];
+        for (const iterator of fruits) {
+            document.write(iterator + "<br>");
+        }
+    </script>
+</body>
+
+</html>

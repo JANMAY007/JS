@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Mathematics</title>
+</head>
+
+<body>
+    <p id="random"></p>
+    <p id="minmax"></p>
+    <p id="round"></p>
+    <script>
+        //random function
+        document.getElementById("random").innerHTML = Math.floor((Math.random() * 10) + 1);
+
+        //minmax functions
+        document.getElementById("minmax").innerHTML = Math.min(1, 5, 4, 2, 6, 8, 7, 9, 3) + " is minimum in list and " + Math.max(1, 5, 4, 2, 6, 8, 7, 9, 3) + " is maximum in the list";
+
+        //round dunction
+        document.getElementById("round").innerHTML = Math.round(15.5)
+    </script>
+</body>
+
+</html>

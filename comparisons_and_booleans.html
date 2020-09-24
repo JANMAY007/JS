@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+</head>
+
+<body>
+    <p id="comparison"></p>
+    <p id="boolean"></p>
+    <script>
+        //'==' is to check value
+        //'===' is to check value and type
+        var a = prompt("enter a value: ", "here");
+        if (a == 100) {
+            document.getElementById("comparison").innerHTML = a == 100;
+        } else if (a === "10") {
+            document.getElementById("comparison").innerHTML = a === "10";
+        }
+        document.getElementById("boolean").innerHTML = Boolean(0) + " " + Boolean(1);
+    </script>
+</body>
+
+</html>

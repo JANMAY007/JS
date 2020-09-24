@@ -1,0 +1,10 @@
+var fruits = ["Mango", "Apple", "Banana", "Orange"];
+document.getElementById("fruits").innerHTML = fruits.toString();
+fruits.splice(2, 0, "Grapes");
+document.getElementById("splice").innerHTML = fruits.toString();
+//fruits.sort();
+//document.getElementById("sort").innerHTML = fruits;
+fruits.reverse();
+document.getElementById("reversesort").innerHTML = fruits;
+var vegetables = ["Potato", "Tomato", "Spinach", "Peas"];
+document.getElementById("join").innerHTML = fruits.concat(vegetables);
